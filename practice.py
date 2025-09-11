@@ -40,17 +40,17 @@ class Vector3:
     def get_x(self):
         return self.__x
     def set_x(self, new_x):
-        self.__x = new_x
+        self.__x = float(new_x)
 
     def get_y(self):
         return self.__y
     def set_y(self, new_y):
-        self.__y = new_y
+        self.__y = float(new_y)
 
     def get_z(self):
         return self.__z
     def set_z(self, new_z):
-        self.__z = new_z
+        self.__z = float(new_z)
 
     # Do not modify the code inside this function.
     def to_tuple(self):
