@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from sys import flags
-
 
 class Vector3:
 
@@ -11,11 +9,6 @@ class Vector3:
     - Make sure that all the member variables are private (using double underscore) to avoid accidental modification.
     - Member variables must be float so that calculations are consistent.
     """
-    def __init__(self, x, y, z):
-        self.__x = float(x)
-        self.__y = float(y)
-        self.__z = float(z)
-
 
     # TODO: Implement +, -, * operator overloading
     """
@@ -24,33 +17,8 @@ class Vector3:
     - operator -: vector subtraction (v1 - v2)
     - operator *: cross product (v1 * v2)
     """
-    def __add__(self, other):
-        return Vector3(self.__x + other.__x, self.__y + other.__y, self.__z + other.__z)
-
-    def __sub__(self, other):
-        return Vector3(self.__x - other.__x, self.__y - other.__y, self.__z - other.__z)
-
-    def __mul__(self, other):
-        cx = self.__y * other.__z - self.__z * other.__y
-        cy = self.__z * other.__x - self.__x * other.__z
-        cz = self.__x * other.__y - self.__y * other.__x
-        return Vector3(cx, cy, cz)
 
     # TODO: Implement getter and setter methods for variables x, y, and z, respectively.
-    def get_x(self):
-        return self.__x
-    def set_x(self, new_x):
-        self.__x = new_x
-
-    def get_y(self):
-        return self.__y
-    def set_y(self, new_y):
-        self.__y = new_y
-
-    def get_z(self):
-        return self.__z
-    def set_z(self, new_z):
-        self.__z = new_z
 
     # Do not modify the code inside this function.
     def to_tuple(self):
@@ -122,7 +90,7 @@ def checksum_value(sid: str) -> str:
 
 if __name__ == "__main__":
     # Put your own student ID and copy the printed checksum value into your Pull Request description.
-    sid = "2025150145"
+    sid = "2025311532"
     print(checksum_value(sid))
 
     # Example usage
