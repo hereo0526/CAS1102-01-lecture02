@@ -37,10 +37,19 @@ class Vector3:
         return Vector3(cx, cy, cz)
 
     # TODO: Implement getter and setter methods for variables x, y, and z, respectively.
+    """
     def get_x(self):
         return self.__x
     def set_x(self, new_x):
         self.__x = float(new_x)
+    """
+    @property
+    def x(self):
+        return self.__x
+    @x.setter
+    def x(self, new_x):
+        self.__x = float(new_x)
+    ###########################
 
     def get_y(self):
         return self.__y
